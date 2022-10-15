@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Glass | ISC DCHP Server Interface</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar fixed-top flex-md-nowrap p-0 shadow-sm">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Glass | ISC DCHP Server Interface</a>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Glass Navigation</span>
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                Statistics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Leases
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="archive"></span>
+                Logs
+              </a>
+            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>ADMIN</span>
+
+          </h6>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="edit-2"></span>
+                DHCP Config
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="download-cloud"></span>
+                DHCP Config Snapshots
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="rotate-cw"></span>
+                Start/Stop/Restart
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span> SETTINGS</span>
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="sliders"></span>
+                Glass Settings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="send"></span>
+                Glass Alerts
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-20 px-9 p-4 mt-9">
+        <div class="card-deck text-center mt-8 ">
+          <div class="card d-flex flex-row">
+            <div class="prepend-icon p-4 d-flex align-items-center">
+              <span data-feather="alert-circle"></span>
+            </div>
+            <div class="p-2">
+              <p class="mg-0">Leases Per Second / Minute</p>
+              <h4>0/0</h4>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-row">
+            <div class="prepend-icon p-3 d-flex align-items-center">
+              <span data-feather="pie-chart"></span>
+            </div>
+            <div class="p-2">
+              <p>Total Leases</p>
+              <h4>14</h4>
+            </div>
+          </div>
+          <div class="card d-flex flex-row">
+            <div class="prepend-icon p-3 d-flex align-items-center">
+              <span data-feather="cpu"></span>
+            </div>
+            <div class="p-2">
+              <p>CPU</p>
+              <h4>0%</h4>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-row">
+            <div class="prepend-icon p-3 d-flex align-items-center">
+              <span data-feather="server"></span>
+            </div>
+            <div class="p-2">
+              <p>SERVER</p>
+              <h4>dhcp</h4>
+            </div>
+          </div>
+
+          <table class="table table-striped table-bordered p-9">
+            <thead>
+              <tr>
+                <th>Shared Networks</th>
+              </tr>
+              <tr>
+                <th scope="col"> Location</th>
+                <th scope="col"> Used</th>
+                <th scope="col"> Used</th>
+                <th scope="col">Free</th>
+                <th scope="col">Utilization</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10.0.40.0/24</td>
+                <td> 9(4.71%)</td>
+                <td>191</td>
+                <td>182</td>
+                <td>
+                  <div class="progress" style="height: .6rem;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>10.0.40.0/24</td>
+                <td>4(4.4%)</td>
+                <td> 91</td>
+                <td> 87</td>
+                <td>
+                  <div class="progress" style="height: .6rem;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 2%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td> 10.0.10.0/24</td>
+                <td>1(0.65%)</td>
+                <td>155</td>
+                <td>154</td>
+                <td>
+                  <div class="progress" style="height: .6rem;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>10.0.30.0/24</td>
+                <td>0(0%)</td>
+                <td> 91</td>
+                <td> 91</td>
+                <td>
+                  <div class="progress" style="height: .6rem;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <!--  
+          TODO Component 4
+
+          Subnets
+          Subnet Location IP Range                 Used     Size Free Utilization
+          10.0.40.0/24    10.0.40.0 - 10.0.40.200  9(4.71%) 191  182  25%
+          10.0.20.0/24    10.0.20.0 - 10.0.20.100  4(4.4%)  91   87   20%
+          10.0.10.0/24    10.0.10.0 - 10.0.10.254  1(0.65%) 155  154  10%
+          10.0.30.0/24    10.0.30.0 - 10.0.30.100  0(0%)    91   91    0%
+
+        -->
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vendor/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Icons -->
+  <script src="js/feather.js"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>

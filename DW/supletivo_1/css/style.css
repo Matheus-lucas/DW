@@ -1,0 +1,106 @@
+#body {
+  color:black;
+  background: #f2f2f2;
+  font-family: 'Ruda', sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 13px;
+  margin: 0;
+  color:black !important;
+}
+
+/* navbar */
+.navbar {
+  background: #ffd777;
+  border-bottom: 1px solid #c9aa5f;
+  padding: .4rem 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #797979;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.navbar .admin-link .material-icons {
+  font-size: 30px;
+}
+
+.navbar img.user {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* main form */
+.container form button {
+  background-color: #797979;
+  color: #fff;
+  font-size: .5rem;
+}
+
+/* main cards */
+.container .row {
+  margin: 2rem auto;
+}
+
+.card{
+  background-color:#808080;
+  box-shadow:0 2px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin-bottom: 2rem;
+  min-height: 330px;
+
+}
+.card:hover{
+  box-shadow:2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.card .card-header{
+  background-color: #797979;
+  color: white;
+  font-size: 1.3rem;
+  padding:1.2rem;
+  font-weight: bold;
+}
+.card .material-icons{
+  font-size:6rem;
+  margin-bottom: 2rem;
+}
+.card .table{
+  padding:.2rem;
+}
+.card .table th{
+  padding:.2rem;
+}
+.card .table td{
+  padding: .2rem;
+}
+.card .table h2{
+
+    line-height: 1.2rem;
+    margin-bottom: 2px;
+    color: inherit;
+}
+#memory-status h2{
+  font-size:1.2rem;
+}
+#disk-size h2{
+  margin-bottom:2rem;
+}
+
+.card-group{
+  display:block;
+  position: relative;
+}
+.card h4 p4{
+  margin:none;
+}
+
+
